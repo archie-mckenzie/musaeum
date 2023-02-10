@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('./EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    line-height: 1.4;
+    align-items: center;
+    padding: 0 10%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.main-content {
+    min-height: calc(100vh - 75px);
+}
+
+.content {
+    margin-top: 25px;
+}
+
+header, .footer, .subtitle {
+    text-align: center;
+}
+
+.footer {
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+} .menu-item:hover {
+    cursor: pointer;
+}
+
+.text {
+    line-height: 2;
+}
+
+

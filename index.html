@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Musaeum</title>
+  </head>
+  <body>
+    <div class="main-content">
+
+      <header>
+        <h1>Library of Alexandria</h1>
+      </header>
+
+      <p class="subtitle">
+        <span class="menu-item" id="about-toggle" style="font-weight: bold;">About</span>·<span id="texts-toggle" class="menu-item">Texts</span>·<a class="menu-item" href='mailto:archie@musaeum.xyz'>Contact</a>
+      </p>
+
+      <div id="about" class="content">
+        <p>
+          Library of Alexandria (<a href="https://musaeum.xyz">musaeum.xyz</a>) is a digital library of classical texts in simple, fluid English.
+        </p>
+        <p>
+          Public domain English translations of Graeco-Roman classical texts are often available for free on the internet. However, almost all public domain translations of texts from authors like Homer, Herodotus, Sophocles, Plato, Aristotle, Demosthenes, Cicero, and Virgil were written in the 1800s and early 1900s. Since these out-of-copyright texts are widely accessible and do not require licensing, projects like <a href='http://www.perseus.tufts.edu/hopper/'>Perseus</a> incorporate them in their tools.
+        </p>
+        <p>
+          Nevertheless, the archaic grammar and vocabulary in these translations make them historical documents in themselves. They are not ideally suited for students first starting out in Greek or Latin. It would be better if there were public domain translations available on the internet in readable, fluid, modern English.
+        </p>
+        <p>
+          This project uses AI and NLP techniques to rewrite public domain translations of classical works into modern English. These AI-produced translations aim for clarity, readability, and idiomatic wording. They are also dedicated to the public domain, and free for anyone to use.
+        </p>
+        <p>
+          Library of Alexandria is an open-source research project by <a href="https://archiemckenzie.com">Archie McKenzie</a>, a student at Princeton Univeristy. See the code on <a href="https://github.com/archie-mckenzie/alexandria">GitHub</a>.
+        </p>
+      </div>
+
+      <div id="texts" style="display: none;">
+        <ul>
+          <li>Herodotus' <i>Histories</i>
+            <ul>
+              <li>Book 1, <a href='./texts/herodotus/herodotus_histories_1.txt'>.txt</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <script>
+      document.getElementById("about-toggle").addEventListener("click", function() {
+        document.getElementById("texts").style.display = "none";
+        document.getElementById("about").style.display = "block";
+        document.getElementById("about-toggle").style.fontWeight = "bold";
+        document.getElementById("texts-toggle").style.fontWeight = "normal";
+      });
+    
+      document.getElementById("texts-toggle").addEventListener("click", function() {
+        document.getElementById("about").style.display = "none";
+        document.getElementById("texts").style.display = "block";
+        document.getElementById("about-toggle").style.fontWeight = "normal";
+        document.getElementById("texts-toggle").style.fontWeight = "bold";
+      });
+    </script>
+</body>
+</html>
