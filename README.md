@@ -1,3 +1,3 @@
 # Musaeum
 
-Site for Library of Alexandria, a digital library of classical texts
+Site for AI translations of classical texts
